@@ -1,0 +1,22 @@
+{{ define "main" }}
+<h1>{{ .Page.Title }}</h1>
+<br />
+{{ .Content }}
+
+<div class="grid-wide">
+    {{ range sort .Data.Pages "Date" "desc" }} {{ if not .Params.private }}
+    <div class="cv-card border">
+        <header>
+            <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+        </header>
+        <div class="card-body">
+            <div>{{ .Summary }}</div>
+        </div>
+        <footer>
+            <a href="{{ .Permalink }}">(more)</a>
+        </footer>
+    </div>
+    {{ end }} {{ end }}
+</div>
+
+{{ end }}

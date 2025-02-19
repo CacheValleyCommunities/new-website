@@ -1,0 +1,32 @@
+# baseURL = 'localo'
+languageCode = 'en-us'
+title = 'Cache Valley Communities'
+
+theme = 'community'
+
+[sitemap]
+changeFreq = "" # Default change frequency (empty string)
+
+filename = "sitemap.xml" # Sitemap file name
+
+priority = -1 # Default priority (-1 means omitted from rendered sitemap)
+
+[params]
+# Cutting off the page title to two chars for mobile (console-demo -> co)
+titleCutting = true
+
+# Set the animation style -- https://animate.style/
+# To disable animations, please remove or comment animationStyle parameter
+animateStyle = "animated zoomIn fast"
+
+[[params.navlinks]]
+name = "about/"
+url = "/organizations/cachevalleycommunities/"
+
+[[params.navlinks]]
+name = "posts/"
+url = "posts/"
+
+[[params.navlinks]]
+name = "organizations/"
+url = "organizations/"

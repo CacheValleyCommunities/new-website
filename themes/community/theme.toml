@@ -1,0 +1,8 @@
+name = "Community"
+license = "MIT"
+features = ["disqus", "responsive", "google analytics"]
+min_version = "0.90.0"
+
+[author]
+name = "Brent Dalling"
+homepage = "https://timelydevs.com"

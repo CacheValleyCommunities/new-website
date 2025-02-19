@@ -1,0 +1,100 @@
+{{ define "main" }}
+
+<div class="alert alert-muted border">
+    <h2>Why does this site look like this?</h2>
+    <p>
+        Simple, most of our users are technical people. And, this matches what
+        they're use to seeing in code editors, browsers, applications, and more.
+    </p>
+    <p>
+        <br />
+        Additionally, we wanted to make sure our site loads for everyone.
+        Meaning we can't have the latest and greatest website technology and
+        styling. We depend on basic HTML, CSS, and JS. The result? Even
+        computers from 2010 can render our page. (though parts might be a bit
+        visually broken)
+    </p>
+</div>
+
+<h1>About</h1>
+
+<p>
+    We're a community resources site. You can find different local communities,
+    resources, events, and more.
+    <a href="/organizations/cachevalleycommunities/">(more)</a>
+</p>
+
+<h1>Organizations</h1>
+
+<p>
+    Cache Valley Communities aims to partner with organizations in the Cache
+    Valley, Utah area to provide up-to-date information in a readily accessible
+    manner. <a href="about/">(more)</a>
+</p>
+
+<div class="grid">
+    {{ with .Site.GetPage "/organizations" }} {{ range first 3 (sort .Data.Pages
+    "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+
+    <div class="cv-card border">
+        <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+    </div>
+    {{ end }} {{ end }}
+</div>
+
+<p>
+    See all organizations we've partnered with
+    <a href="/organizations">here</a>.
+</p>
+
+<br />
+<hr />
+
+<h1>Latest posts</h1>
+
+<div class="grid-wide">
+    {{ with .Site.GetPage "/posts" }} {{ range first 10 (sort .Data.Pages "Date"
+    "desc" (where .Pages ".Params.private" "!=" true))}}
+
+    <div class="cv-card border">
+        <header>
+            <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+        </header>
+        <div class="card-body">
+            <div>{{ .Summary }}</div>
+        </div>
+        <footer>
+            <a href="{{ .Permalink }}">(more)</a>
+        </footer>
+    </div>
+    {{ end }} {{ end }}
+</div>
+
+<p>
+    All other
+    <a href="/organizations">posts</a>.
+</p>
+
+<hr />
+
+<h1>Disclaimer</h1>
+<p>
+    Organizations listed on our website are not related to us. Our content
+    doesn't reflect the views, values, and preferences of the organizations on
+    our page.
+</p>
+
+<p>
+    This service is aimed at helping people in
+    <strong>Cache Valley, UT</strong> to find resources, events, and more.
+</p>
+
+<hr />
+
+<div class="alert alert-info">
+    <h3>Want to be a pro?</h3>
+    <p>Try using <code>/</code> and then searching the page for content!</p>
+    <p>Try using <code>ctrl+p</code> to open a command pallete!</p>
+</div>
+
+{{ end }}
