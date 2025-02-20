@@ -19,7 +19,7 @@ weight: 1
 
 We're excited to announce our upcoming event on **Saturday, Feburuary 22, 2025**, from **1:30 PM – 3:30 PM (MST)** at **Bridgerland Technical College**.
 
-Join our [Discord community](https://discord.com/invite/YNkqmVGZbSk) to stay connected with fellow tech enthusiasts!
+Join our [Discord community](https://discord.gg/YNkqmVGZbS) to stay connected with fellow tech enthusiasts!
 
 > This month our focus will be related to programming. There is the expectation that attendees have a basic understanding of programming concepts. If you're a beginner, don't worry! You can still learn a lot from this event and leave with your very own chat application!
 

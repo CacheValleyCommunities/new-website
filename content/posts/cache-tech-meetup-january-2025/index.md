@@ -18,7 +18,7 @@ tags:
 weight: 1
 ---
 
-Join our [Discord community](https://discord.com/invite/YNkqmVGZbSk) to stay connected with fellow tech enthusiasts!
+Join our [Discord community](https://discord.gg/YNkqmVGZbS) to stay connected with fellow tech enthusiasts!
 
 Join us on Jan 25, 2025, at 1:30 PM (MST) at Logan Library for a tech meetup! The event features an open discussion on tech careers and a deep dive into mobile forensics, including an iPhone forensic demo. Open to all skill levels—come learn and connect!
 
