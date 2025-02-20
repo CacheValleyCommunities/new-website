@@ -2,6 +2,11 @@ languageCode = 'en-us'
 title = 'Cache Valley Communities'
 theme = 'community'
 
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
 [sitemap]
 changeFreq = ""
 filename = "sitemap.xml"
@@ -10,6 +15,7 @@ priority = -1
 [params]
 titleCutting = true
 animateStyle = "animated zoomIn fast"
+github = "https://github.com/CacheValleyCommunities/"
 
 [[params.navlinks]]
 name = "about/"
@@ -24,16 +30,22 @@ name = "organizations/"
 url = "organizations/"
 
 [[params.navlinks]]
-name = "Github"
+name = "contributors/"
+url = "/page/contributors/"
+
+[[params.navlinks]]
+name = "Github/"
 url = "https://github.com/CacheValleyCommunities/new-website"
 
 [permalinks]
-posts = "/p/:slug"
+posts = "/posts/:slug"
 
+# Mount all content directories at their standard locations
 [[module.mounts]]
-source = "content/posts"
-target = "content/posts"
+source = "content"
+target = "content"
 
+# Additional mount for the old posts URL pattern
 [[module.mounts]]
 source = "content/posts"
 target = "content/p"

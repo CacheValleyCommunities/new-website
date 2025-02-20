@@ -6,10 +6,10 @@ links:
     website: https://github.com/CacheValleyCommunities
     image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
 menu:
-    main: 
-        weight: 5
-        # params:
-        #     icon: users
+  main:
+    weight: 5
+    # params:
+    #     icon: users
 comments: false
 ---
 
@@ -17,17 +17,16 @@ This page is dedicated to the talented individuals who have contributed to the d
 
 ## Contributors
 
-### [Brent Dalling](https://brentdalling.com)  
-*Community Member*  
-Brent is the primary contributor to the website, responsible for overseeing the project's direction, design, and development. You can find more about him on his [personal website](https://brentdalling.com) and see his GitHub contributions [here](https://github.com/bvdalling).
+---
 
+- [Brent Dalling](https://brentdalling.com);
+  is the primary contributor to the website, responsible for overseeing the project's direction, design, and development. You can find more about him on his [personal website](https://brentdalling.com) and see his GitHub contributions [here](https://github.com/bvdalling).
+
+- Your Name Here; (after your first completed pull request)
 
 ---
 
-We also encourage everyone in the community to contribute, whether it’s with code, ideas, bug reports, or anything else! Find out more about how to get involved on our [GitHub repository](https://github.com/CacheValleyCommunities) and start contributing today.
-
----
-
-If you'd like to contribute or learn more about the individuals behind this project, feel free to reach out or explore their personal pages linked above. We’re always open to new contributions!
-
----
+<div class="alert alert-muted">
+    <p>Join our growing community of creators and innovators! Whether you have code to contribute, fresh ideas to share, bugs to report, or other talents to offer, your unique perspective can help shape this project. Visit our GitHub repository to get started.</p>
+    <a href="https://github.com/CacheValleyCommunities/" target="_blank" class="btn btn-primary">View Repository</a>
+</div>
