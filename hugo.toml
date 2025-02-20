@@ -30,3 +30,16 @@ url = "posts/"
 [[params.navlinks]]
 name = "organizations/"
 url = "organizations/"
+
+[permalinks]
+posts = "/posts/:slug"
+
+[module]
+[[module.mounts]]
+source = "content/posts"
+target = "content"
+lang = "en"
+
+[[module.mounts.permalinks]]
+from = "/p/:slug"
+to = "/posts/:slug"
