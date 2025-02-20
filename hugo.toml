@@ -31,6 +31,10 @@ url = "posts/"
 name = "organizations/"
 url = "organizations/"
 
+[[params.navlinks]]
+name = "Github"
+url = "https://github.com/CacheValleyCommunities/new-website"
+
 [permalinks]
 posts = "/posts/:slug"
 
