@@ -1,22 +1,14 @@
-# baseURL = 'localo'
 languageCode = 'en-us'
 title = 'Cache Valley Communities'
-
 theme = 'community'
 
 [sitemap]
-changeFreq = "" # Default change frequency (empty string)
-
-filename = "sitemap.xml" # Sitemap file name
-
-priority = -1 # Default priority (-1 means omitted from rendered sitemap)
+changeFreq = ""
+filename = "sitemap.xml"
+priority = -1
 
 [params]
-# Cutting off the page title to two chars for mobile (console-demo -> co)
 titleCutting = true
-
-# Set the animation style -- https://animate.style/
-# To disable animations, please remove or comment animationStyle parameter
 animateStyle = "animated zoomIn fast"
 
 [[params.navlinks]]
@@ -36,14 +28,12 @@ name = "Github"
 url = "https://github.com/CacheValleyCommunities/new-website"
 
 [permalinks]
-posts = "/posts/:slug"
+posts = "/p/:slug"
 
-[module]
 [[module.mounts]]
 source = "content/posts"
-target = "content"
-lang = "en"
+target = "content/posts"
 
-[[module.mounts.permalinks]]
-from = "/p/:slug"
-to = "/posts/:slug"
+[[module.mounts]]
+source = "content/posts"
+target = "content/p"
