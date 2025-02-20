@@ -1,0 +1,545 @@
+/* Import modern, readable fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Fira+Mono:wght@400;500&display=swap");
+
+/* Atelier Dune Dark - Readable & Balanced */
+:root {
+    --background: #181815; /* Slightly darker for better contrast */
+    --foreground: #d6d3c9; /* Warmer, softer neutral for readability */
+    --primary: #9a927a; /* Softer, neutral gray-brown for headings */
+    --secondary: #c2a76d; /* Warm but not too saturated */
+    --tertiary: #7ca578; /* More distinct but still soft green */
+    --highlight: #a07c68; /* Warm, slightly desaturated brown */
+    --muted: #6f6c5f; /* Darker muted tone for subtle elements */
+    --code-bg: #24231f; /* Darker code background for contrast */
+    --info-bg: #5f7c9c; /* Slightly brighter blue-gray */
+    --info-text: #e8e4cf;
+    --warn-bg: #b79a4c; /* More golden for visibility */
+    --warn-text: #181815;
+    --error-bg: #b35b5b; /* Softer than bright red but still distinct */
+    --error-text: #e8e4cf;
+    --success-bg: #5f9566; /* Slightly stronger green */
+    --success-text: #e8e4cf;
+}
+
+/* Global Reset & Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Improved Spacing for Consistency */
+body.terminal {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.7; /* Improved readability */
+    padding: 20px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1rem; /* Consistent spacing */
+}
+
+/* Headings - Improved Spacing */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary);
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    margin-top: 1.5rem; /* Space before heading */
+    margin-bottom: 0.75rem; /* Space after heading */
+    line-height: 1.3; /* Better readability */
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.75rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+h5,
+h6 {
+    font-size: 1rem;
+}
+
+/* Lists - Consistent Spacing */
+ul,
+ol {
+    margin: 1rem 0; /* Consistent spacing */
+    padding-left: 1.5rem;
+}
+
+ul {
+    list-style: square;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul li,
+ol li {
+    margin-bottom: 0.5rem; /* Space between list items */
+}
+
+ul li::marker,
+ol li::marker {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+/* Blockquote - Spacing & Styling */
+blockquote {
+    border-left: 4px solid var(--muted);
+    padding: 12px 20px;
+    color: var(--tertiary);
+    font-style: italic;
+    background: rgba(111, 108, 95, 0.15);
+    margin: 1.5rem 0; /* Better separation from text */
+    border-radius: 5px;
+}
+
+/* Horizontal Rule - Improved Spacing */
+hr {
+    border: none;
+    height: 2px;
+    background: var(--muted);
+    margin: 2rem 0; /* Consistent separation */
+    opacity: 0.5;
+}
+
+/* Code Blocks */
+code,
+pre {
+    background-color: var(--code-bg);
+    color: var(--foreground);
+    padding: 5px;
+    border-radius: 4px;
+    font-family: "Fira Mono", monospace;
+    font-size: 0.95rem;
+}
+
+pre {
+    padding: 12px;
+    overflow-x: auto;
+    margin: 1rem 0; /* Prevents inconsistent spacing */
+}
+
+/* Links */
+.terminal a {
+    color: var(--highlight);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.terminal a:hover {
+    color: var(--tertiary);
+    text-decoration: underline;
+}
+
+/* Text Styles */
+strong {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+blockquote {
+    border-left: 3px solid var(--muted);
+    padding-left: 15px;
+    color: var(--tertiary);
+    font-style: italic;
+    margin: 10px 0;
+}
+
+ul,
+ol {
+    margin-left: 25px;
+    padding-left: 10px;
+}
+
+/* Code & Preformatted Text */
+code,
+pre {
+    background-color: var(--code-bg);
+    color: var(--foreground);
+    padding: 5px;
+    border-radius: 4px;
+    font-family: "Fira Mono", monospace;
+    font-size: 0.95rem;
+}
+
+pre {
+    padding: 12px;
+    overflow-x: auto;
+}
+
+/* Layout */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Responsive Grid */
+.grid,
+.grid-wide {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.grid-wide {
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+}
+
+/* Card Component */
+.cv-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--code-bg);
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.cv-card header {
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+
+.cv-card .card-body {
+    color: var(--tertiary);
+    font-size: 1em;
+    flex-grow: 1;
+}
+
+.cv-card footer {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.cv-card footer a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.cv-card footer a:hover {
+    text-decoration: underline;
+}
+
+/* Image Grid */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Alerts */
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.alert h1,
+.alert h2,
+.alert h3,
+.alert h4,
+.alert h5,
+.alert h6 {
+    margin: 0;
+    color: #fff;
+}
+
+.alert p {
+    margin: 5px 0;
+}
+
+.alert-info {
+    background-color: var(--info-bg);
+    color: var(--info-text);
+}
+
+.alert-muted {
+    background-color: var(--code-bg);
+    color: var(--foreground);
+}
+
+.alert-warn {
+    background-color: var(--warn-bg);
+    color: var(--warn-text);
+}
+
+.alert-error {
+    background-color: var(--error-bg);
+    color: var(--error-text);
+}
+
+.alert-success {
+    background-color: var(--success-bg);
+    color: var(--success-text);
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: var(--muted);
+    text-align: center;
+}
+
+.footer a {
+    color: var(--highlight);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .grid,
+    .grid-wide {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    section {
+        padding-block: 1rem;
+    }
+}
+
+section {
+    padding-block: 2rem;
+}
+
+/* Consistent Styling for Lists, Blockquotes, and Horizontal Rules */
+
+/* Unordered & Ordered Lists */
+ul,
+ol {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+ul {
+    list-style: square; /* More distinct than default disc */
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul li,
+ol li {
+    margin-bottom: 6px;
+    padding-left: 5px;
+}
+
+ul li::marker,
+ol li::marker {
+    color: var(--secondary); /* Muted gold to match the theme */
+    font-weight: bold;
+}
+
+/* Blockquote Styling */
+blockquote {
+    border-left: 4px solid var(--muted);
+    padding: 12px 20px;
+    color: var(--tertiary);
+    font-style: italic;
+    background: rgba(111, 108, 95, 0.15); /* Soft muted overlay */
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    height: 2px;
+    background: var(--muted); /* Consistent muted tone */
+    margin: 20px 0;
+    opacity: 0.5;
+}
+
+/* Navigation Bar - Styled for Readability & Consistency */
+.terminal-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    border-bottom: 2px solid var(--muted);
+    padding: 10px 0;
+    font-family: "Fira Sans", sans-serif;
+}
+
+/* Logo & Prompt Styling */
+.terminal-logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 1.5rem !important;
+}
+
+.terminal-logo .terminal-prompt {
+    font-family: "Fira Mono", monospace;
+    font-size: 1rem;
+    color: var(--primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.terminal-logo a {
+    color: var(--highlight);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.terminal-logo a:hover {
+    color: var(--tertiary);
+    text-decoration: underline;
+}
+
+/* Navigation Menu */
+.terminal-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.terminal-menu ul li {
+    margin-right: 15px;
+}
+
+.terminal-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.terminal-menu a {
+    color: var(--foreground);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.2s ease-in-out;
+}
+
+.terminal-menu a:hover {
+    color: var(--muted);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .terminal-nav {
+        padding: 10px 15px;
+    }
+
+    .terminal-logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .terminal-menu ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .terminal-menu ul li {
+        margin-right: 0;
+    }
+}
+
+/* Themed Border Styles */
+.border {
+    border: 2px solid var(--muted); /* Subtle, soft contrast */
+    border-radius: 6px; /* Slightly rounded corners */
+    padding: 12px; /* Spacing inside the border */
+    margin: 15px 0; /* Ensure proper spacing */
+}
+
+/* Alternative Borders */
+.border-primary {
+    border-color: var(--primary);
+}
+
+.border-secondary {
+    border-color: var(--secondary);
+}
+
+.border-tertiary {
+    border-color: var(--tertiary);
+}
+
+.border-highlight {
+    border-color: var(--highlight);
+}
+
+.border-thick {
+    border-width: 4px;
+}
+
+.border-thin {
+    border-width: 1px;
+}
+
+/* Dashed & Dotted Variants */
+.border-dashed {
+    border-style: dashed;
+}
+
+.border-dotted {
+    border-style: dotted;
+}
+
+/* Soft Background for Borders */
+.border.bg-muted {
+    background: rgba(111, 108, 95, 0.15); /* Muted overlay */
+}
+
+.border.bg-code {
+    background: var(--code-bg);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .border {
+        padding: 10px;
+        border-width: 1.5px;
+    }
+}
