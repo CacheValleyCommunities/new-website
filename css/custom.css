@@ -3,22 +3,22 @@
 
 /* Atelier Dune Dark - Readable & Balanced */
 :root {
-    --background: #181815; /* Slightly darker for better contrast */
-    --foreground: #d6d3c9; /* Warmer, softer neutral for readability */
-    --primary: #9a927a; /* Softer, neutral gray-brown for headings */
-    --secondary: #c2a76d; /* Warm but not too saturated */
-    --tertiary: #7ca578; /* More distinct but still soft green */
-    --highlight: #a07c68; /* Warm, slightly desaturated brown */
-    --muted: #6f6c5f; /* Darker muted tone for subtle elements */
-    --code-bg: #24231f; /* Darker code background for contrast */
-    --info-bg: #5f7c9c; /* Slightly brighter blue-gray */
-    --info-text: #e8e4cf;
-    --warn-bg: #b79a4c; /* More golden for visibility */
-    --warn-text: #181815;
-    --error-bg: #b35b5b; /* Softer than bright red but still distinct */
-    --error-text: #e8e4cf;
-    --success-bg: #5f9566; /* Slightly stronger green */
-    --success-text: #e8e4cf;
+    --background: #181815;
+    --foreground: #e6e3d9;
+    --primary: #a59c84;
+    --secondary: #d4b97e;
+    --tertiary: #8cb989;
+    --highlight: #b18a76;
+    --muted: #8a8778;
+    --code-bg: #24231f;
+    --info-bg: #5f7c9c;
+    --info-text: #ffffff;
+    --warn-bg: #b79a4c;
+    --warn-text: #000000;
+    --error-bg: #b35b5b;
+    --error-text: #ffffff;
+    --success-bg: #5f9566;
+    --success-text: #ffffff;
 }
 
 /* Global Reset & Typography */
