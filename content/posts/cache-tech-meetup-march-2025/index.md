@@ -18,6 +18,11 @@ tags:
 weight: 10
 ---
 
+### Event Details:
+- **Date**: Saturday, March 23rd, 2025
+- **Time**: 1:30 PM – 3:30 PM (MST)
+- **Location**: Bridgerland Technical College, West Building, Room 1860, 1410 N 1000 W, Logan, UT 84321
+
 ## Event Overview
 Join us for an immersive security-focused programming workshop on **Saturday, March 23, 2025**, from **1:30 PM – 3:30 PM (MST)** at **Bridgerland Technical College**. This month, we're diving into the world of application security using Go (Golang), a powerful and increasingly popular programming language known for its performance, simplicity, and built-in concurrency features.
 
@@ -25,6 +30,8 @@ Join us for an immersive security-focused programming workshop on **Saturday, Ma
 Go has become a preferred language for building modern infrastructure, microservices, and web applications. Its simplicity makes it an excellent choice for teaching security concepts, as the code remains readable while implementing sophisticated security patterns. By the end of this workshop, you'll understand how security vulnerabilities arise and how to protect against them using industry-standard techniques.
 
 ## Detailed Event Schedule
+
+Please check the bottom of the article to find a map to the location.
 
 ### Part 1: General Meetup & Networking (45 minutes)
 - **1:30 - 1:45 PM**: Welcome, introductions, and community announcements
@@ -112,3 +119,10 @@ Join our [Discord community](https://discord.gg/YNkqmVGZbS) before the event to:
 - Stay connected with the community after the event
 
 We look forward to seeing you for an afternoon of learning, coding, and community building at Bridgerland Technical College!
+
+
+---
+
+Bridgerland Technical College, West Building, Room 1860, 1410 N 1000 W, Logan, UT 84321
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1052.2634352012012!2d-111.85486010495926!3d41.7582578833811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87548761d149ad99%3A0x8097136802931f7!2s1410%20N%201000%20W%2C%20Logan%2C%20UT%2084321!5e0!3m2!1sen!2sus!4v1741883188917!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
