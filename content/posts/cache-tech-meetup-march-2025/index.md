@@ -3,7 +3,7 @@ title: Cache Tech Community Meetup - March 2025
 description: Join us for a meetup to discuss tech and learn to secure applications in go!
 date: 2025-03-13 00:16:00+0000
 image: image_870x_67799e80a280c.jpg
-summary: "Join us on **Feb 22, 2025, at 1:30 PM (MST) at Bridgerland Technical College** for a tech meetup focused on **programming and networking**. The event features an **open discussion on tech careers** and a **hands-on session** where attendees will *secure an application in Go**. Open to all skill levels—bring your laptop and curiosity!"
+summary: "Join us on **MArch 22, 2025, at 1:30 PM (MST) at Bridgerland Technical College** for a tech meetup focused on **programming and networking**. The event features an **open discussion on tech careers** and a **hands-on session** where attendees will *secure an application in Go**. Open to all skill levels—bring your laptop and curiosity!"
 
 categories:
     - Communities
@@ -19,12 +19,12 @@ weight: 10
 ---
 
 ### Event Details:
-- **Date**: Saturday, March 23rd, 2025
+- **Date**: Saturday, March 22nd, 2025
 - **Time**: 1:30 PM – 3:30 PM (MST)
 - **Location**: Bridgerland Technical College, West Building, Room 1860, 1410 N 1000 W, Logan, UT 84321
 
 ## Event Overview
-Join us for an immersive security-focused programming workshop on **Saturday, March 23, 2025**, from **1:30 PM – 3:30 PM (MST)** at **Bridgerland Technical College**. This month, we're diving into the world of application security using Go (Golang), a powerful and increasingly popular programming language known for its performance, simplicity, and built-in concurrency features.
+Join us for an immersive security-focused programming workshop on **Saturday, March 22, 2025**, from **1:30 PM – 3:30 PM (MST)** at **Bridgerland Technical College**. This month, we're diving into the world of application security using Go (Golang), a powerful and increasingly popular programming language known for its performance, simplicity, and built-in concurrency features.
 
 ## Why Security in Go?
 Go has become a preferred language for building modern infrastructure, microservices, and web applications. Its simplicity makes it an excellent choice for teaching security concepts, as the code remains readable while implementing sophisticated security patterns. By the end of this workshop, you'll understand how security vulnerabilities arise and how to protect against them using industry-standard techniques.
