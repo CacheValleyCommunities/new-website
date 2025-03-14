@@ -23,7 +23,7 @@ This page is dedicated to the talented individuals who have contributed to the d
   is the primary contributor to the website, responsible for overseeing the project's direction, design, and development. You can find more about him on his [personal website](https://brentdalling.com) and see his GitHub contributions [here](https://github.com/bvdalling).
 
 - [Austin Thornley](https://austinthornley.com);
-	is a lifelong Cache Valley resident that enjoys coding, reading, and hiking. His website is currently a work in progress but you can view his GitHub profile [here](https://github.com/austinthornley).
+	is a lifelong Cache Valley resident that enjoys coding, reading, and hiking. His [personal website](https://austinthornley.com) is currently a work in progress but you can view his GitHub profile [here](https://github.com/austinthornley).
 
 - Your Name Here; (after your first completed pull request)
 
