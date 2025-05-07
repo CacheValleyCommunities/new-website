@@ -3,7 +3,7 @@ title: Cache Tech Community Meetup - March 2025
 description: Join us for a meetup to discuss tech and learn to secure applications in go!
 date: 2025-03-13 00:16:00+0000
 image: image_870x_67799e80a280c.jpg
-summary: "Join us on **MArch 22, 2025, at 1:30 PM (MST) at Bridgerland Technical College** for a tech meetup focused on **programming and networking**. The event features an **open discussion on tech careers** and a **hands-on session** where attendees will *secure an application in Go**. Open to all skill levels—bring your laptop and curiosity!"
+summary: "Join us on **March 22, 2025, at 1:30 PM (MST) at Bridgerland Technical College** for a tech meetup focused on **programming and networking**. The event features an **open discussion on tech careers** and a **hands-on session** where attendees will *secure an application in Go**. Open to all skill levels—bring your laptop and curiosity!"
 
 categories:
     - Communities
