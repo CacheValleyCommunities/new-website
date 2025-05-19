@@ -3,7 +3,7 @@ title: Cache Tech Community Meetup - May 2025
 description: Join us for a meetup to learn about how DNS works and the insane vulnerabilities surrounding it!
 date: 2025-05-19 00:16:00+0000
 image: image_870x_67799e80a280c.jpg
-summary: "Join us on **May 23, 2025, at 1:30 PM (MST) at Bridgerland Technical College** for a tech meetup focused on **DNS**. The event features an **open discussion on tech careers** and a **deep dive into DNS security vulnerabilities**. Open to all skill levels—bring your laptop and curiosity!"
+summary: "Join us on **May 24th, 2025, at 1:30 PM (MST) at Bridgerland Technical College** for a tech meetup focused on **DNS**. The event features an **open discussion on tech careers** and a **deep dive into DNS security vulnerabilities**. Open to all skill levels—bring your laptop and curiosity!"
 
 categories:
     - Communities
@@ -21,12 +21,12 @@ weight: 10
 ---
 
 ### Event Details:
-- **Date**: Saturday, May 23rd, 2025
+- **Date**: Saturday, May 24th, 2025
 - **Time**: 1:30 PM – 3:30 PM (MST)
 - **Location**: Bridgerland Technical College, West Building, Room 1860, 1410 N 1000 W, Logan, UT 84321
 
 ## Event Overview
-Join us for an educational workshop on **Saturday, May 23rd, 2025**, from **1:30 PM – 3:30 PM (MST)** at **Bridgerland Technical College**. This month, we're diving into the world of DNS (Domain Name System)! Our presenter will guide us through the ins and outs of DNS, including its vulnerabilities and security implications. This is a fantastic opportunity to learn about a critical part of the internet infrastructure that often goes unnoticed but impacts everything we do online.
+Join us for an educational workshop on **Saturday, May 24th, 2025**, from **1:30 PM – 3:30 PM (MST)** at **Bridgerland Technical College**. This month, we're diving into the world of DNS (Domain Name System)! Our presenter will guide us through the ins and outs of DNS, including its vulnerabilities and security implications. This is a fantastic opportunity to learn about a critical part of the internet infrastructure that often goes unnoticed but impacts everything we do online.
 
 ## Why Learn About DNS?
 DNS is often called the "phone book of the internet" - it's what translates human-readable domain names (like google.com) into IP addresses that computers use to communicate. Understanding DNS is crucial because:
