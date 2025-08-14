@@ -1,7 +1,7 @@
 ---
 title: Cache Tech Community Meetup - August 2025
 description: CodeCamp winners showcase their amazing projects!
-date: 2025-08-15 00:16:00+0000
+date: 2025-08-01 00:16:00+0000
 image: image_870x_67799e80a280c.jpg
 summary: "Join us on **August 23rd, 2025** for a special Cache Tech Community meetup featuring **CodeCamp: Bridgerland winners presenting their incredible projects**! Come celebrate their achievements and connect with Cache Valley's amazing tech community. Open to everyone—whether you participated in CodeCamp or just want to see some awesome projects!"
 
