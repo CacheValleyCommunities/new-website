@@ -109,7 +109,7 @@
   </main>
 
   <!-- Simple Mobile Menu JavaScript -->
-  <script defer>
+  <script>
     document.addEventListener('DOMContentLoaded', function () {
       const menuButton = document.getElementById('mobile-menu-button');
       const menu = document.getElementById('mobile-menu');
@@ -119,8 +119,6 @@
         // Toggle menu visibility
         if (menu.classList.contains('hidden')) {
           menu.classList.remove('hidden');
-          menu.className = menu.className.replace('hidden', '');
-          // make sure it's removed
           icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
         } else {
           menu.classList.add('hidden');
@@ -131,6 +129,7 @@
       // Close menu when clicking links
       menu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', function () {
+          menu.classList.add('hidden');
           icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
         });
       });
