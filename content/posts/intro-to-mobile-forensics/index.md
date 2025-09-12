@@ -76,9 +76,3 @@ This **do-it-yourself workshop** teaches you how to use **MVT (Mobile Verificati
 
 * Post questions and share results in our community channels.
 * If we schedule an **optional in-person lab**, we’ll announce it separately—this post intentionally **does not advertise a time or location**.
-
-Happy (ethical) hunting!
-
-```
-::contentReference[oaicite:0]{index=0}
-```

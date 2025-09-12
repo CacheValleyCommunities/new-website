@@ -1,6 +1,8 @@
 +++
 title = "W.A.B. Warming Center"
 date = "2025-02-18"
+website = "https://www.wabwarmingcenter.org/"
+image = "https://www.wabwarmingcenter.org/wp-content/uploads/2022/02/wab-logo.png"
 summary = "The W.A.B. Warming Center provides a safe, warm space for unhoused individuals and families in Cache Valley, Utah, during the coldest months. It offers resources, supervision, and support to ensure no one is left unsheltered and alone in winter. Families with children are welcome, with safety agreements in place. Visit their official website to learn more."
 +++
 

@@ -17,6 +17,12 @@ titleCutting = true
 animateStyle = "animated zoomIn fast"
 github = "https://github.com/CacheValleyCommunities/"
 
+[pagination]
+# Number of pages to show per page
+pagesPerSection = 6
+# Number of pages to show in pagination controls
+paginatePath = "page"
+
 [[params.navlinks]]
 name = "about/"
 url = "/organizations/cachevalleycommunities/"

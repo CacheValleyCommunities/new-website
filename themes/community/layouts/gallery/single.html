@@ -1,15 +1,23 @@
 {{ define "main" }}
-<h1>{{ .Page.Title }}</h1>
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">{{ .Page.Title }}</h1>
+    </header>
 
-{{ if and (isset .Params "image") .Params.image }}
+    {{ if and (isset .Params "image") .Params.image }}
     {{ $image := .Page.Resources.GetMatch .Params.image }}
     {{ with $image }}
-        {{ $thumb := .Resize "1000x" }}
-        {{ printf `<img src="%s" alt="%s" class="img-responsive gallery-image">` $thumb.RelPermalink .Title | safeHTML }}
+    {{ $thumb := .Resize "1000x" }}
+    <div class="gallery-image-container">
+        {{ printf `<img src="%s" alt="%s" class="gallery-image">` $thumb.RelPermalink .Title | safeHTML }}
+    </div>
     {{end}}
-{{ end }}
+    {{ end }}
 
-{{ .Content }}
-{{ template "_internal/disqus.html" . }}
+    <div class="post-content">
+        {{ .Content }}
+    </div>
 
+    {{ template "_internal/disqus.html" . }}
+</article>
 {{ end }}

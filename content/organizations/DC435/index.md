@@ -1,6 +1,7 @@
 +++
 title = "DC435 - Cyber Security"
 date = "2025-02-18"
+website = "https://www.dc435.org/"
 summary = "DC435 is a free, community-driven DEFCON group in Cache Valley, UT, focused on InfoSec. Meetings are first Thursdays at 7 PM at Bridgerland Technical College, Logan, UT. Open to all, DC435 fosters learning, collaboration, and respect, with a strict no-harassment policy. Just show up to join!"
 +++
 
