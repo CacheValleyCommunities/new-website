@@ -25,6 +25,64 @@
 <span class="inline-block bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full mr-2 mb-2 hover:bg-indigo-100 hover:text-indigo-800 transition-colors duration-200">Open Source</span></div><div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-t border-gray-200 pt-8"><a href=/posts/cache-tech-community-meetup-august-2025/ class="inline-flex items-center text-indigo-500 hover:text-indigo-700 mb-4 sm:mb-0"><svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
 Cache Tech Community Meetup - August 2025
 </a><a href=/posts/how-to-spot-and-avoid-scams/ class="inline-flex items-center text-indigo-500 hover:text-indigo-700">How to Spot and Avoid Scams
-<svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a></div></article></div></section><footer class="bg-white border-t border-gray-200"><div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8"><div class=text-center><p class="text-gray-500 text-sm">Created by the community, for the community—powered by collaboration and
+<svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a></div><a id=nodebb-comments></a><script>(function(){var e={};e.url="//forum.cachevalley.co",e.cid=1,e.articleID="/posts/diy-mobile-verification-toolkit-mvt-workshop/",e.script=document.createElement("script"),e.script.type="text/javascript",e.script.async=!0,e.script.src=e.url+"/plugins/nodebb-plugin-blog-comments/lib/ghost.js",(document.head||document.body).appendChild(e.script)})()</script><script id=nbb-title type=text/markdown>DIY Mobile Verification Toolkit (MVT) Workshop</script><script id=nbb-markdown type=text/markdown>
+## Overview
+This **do-it-yourself workshop** teaches you how to use **MVT (Mobile Verification Toolkit)** to collect and analyze mobile data in a way that respects consent and privacy. Work through the material **on your own schedule**—no fixed time or place. (When we run a physical session, it will be announced separately.)
+
+&gt; **Ethics first:** Only analyze devices and data you own or have explicit, informed consent to examine.
+
+## What You’ll Learn
+- **Acquisition basics**
+  - iOS: create an encrypted backup and (optionally) work with a full filesystem image.
+  - Android: understand ADB collection vs. backup limitations.
+- **Decryption &amp; preparation**
+  - Decrypt iOS backups; organize evidence safely.
+- **IOC-based triage with MVT**
+  - Run `mvt-ios check-backup` / `check-fs` and `mvt-android check-adb` where applicable.
+- **Interpreting results**
+  - Read JSON outputs, understand detections vs. false positives, and document findings.
+
+## Who Is It For?
+- **Beginners** curious about practical, ethical mobile forensics  
+- **Developers/analysts** interested in security triage and artifact parsing  
+- **Civic-tech/NGO folks** building skills for high-risk contexts
+
+## Prerequisites
+- **Computer:** macOS or Linux recommended. Windows users should use **WSL** for best results.  
+- **Tools:**  
+  - Python 3, `pipx`, and `sqlite3`  
+  - For iOS backups: libimobiledevice (macOS/Linux)  
+  - Optional: `libusb` (helps with some USB/Android workflows)
+- **Consent &amp; storage:** You’ll handle sensitive data—use an encrypted disk and keep notes.
+
+&gt; **No device handy?** Use public, **legal practice datasets** (e.g., Digital Corpora, NIST CFReDS, DFRWS) to follow along with the exercises.
+
+## Workshop Tracks
+
+### Track A — iOS (recommended starting point)
+1. Create an **encrypted iTunes/Finder backup** (or use a practice backup image).  
+2. Decrypt and prepare the backup for analysis.  
+3. Run **MVT** modules against the backup or a mounted filesystem.  
+4. Review artifacts (e.g., Safari history/state, system logs) and summarize findings.
+
+**Estimated time:** 90–120 minutes
+
+### Track B — Android (triage focus)
+1. Understand **backup limitations** on modern Android.  
+2. If possible, use **ADB** collection for richer data; otherwise use a sample dataset.  
+3. Run MVT where applicable and supplement with ALEAPP for broader artifact coverage.  
+4. Write up observations and caveats.
+
+**Estimated time:** 60–90 minutes
+
+## View the full workshop materials
+&lt;embed src=&#34;intro-to-mobile-forensics-workshop.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;700&#34; /&gt;
+
+[Download the workshop handout (PDF)](intro-to-mobile-forensics-workshop.pdf)
+
+## Community &amp; Help
+
+* Post questions and share results in our community channels.
+* If we schedule an **optional in-person lab**, we’ll announce it separately—this post intentionally **does not advertise a time or location**.</script><noscript>Please enable JavaScript to view comments</noscript></article></div></section><footer class="bg-white border-t border-gray-200"><div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8"><div class=text-center><p class="text-gray-500 text-sm">Created by the community, for the community—powered by collaboration and
 proudly hosted by
 <a href=https://www.timelydevs.com class="text-indigo-600 hover:text-indigo-500 transition-colors duration-200">Timely Devs</a>.</p></div></div></footer></main><script>document.addEventListener("DOMContentLoaded",function(){const n=document.getElementById("mobile-menu-button"),e=document.getElementById("mobile-menu"),t=n.querySelector("svg");n.addEventListener("click",function(){e.classList.contains("hidden")?(e.classList.remove("hidden"),t.innerHTML='<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />'):(e.classList.add("hidden"),t.innerHTML='<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />')}),e.querySelectorAll("a").forEach(n=>{n.addEventListener("click",function(){e.classList.add("hidden"),t.innerHTML='<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />'})})})</script></body></html>
