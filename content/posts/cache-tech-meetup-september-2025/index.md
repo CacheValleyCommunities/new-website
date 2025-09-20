@@ -50,8 +50,7 @@ Participating in this event does not imply endorsement of any unethical or illeg
 
 ### Resources
 For those interested in learning more about OSINT, here are some valuable resources:
-- [OSINT Framework](https://osintframework.com/): A collection of OSINT tools and resources
-- [Bellingcat's Online Investigation Toolkit](https://www.bellingcat.com/resources/how-to-guides/2020/03/09/bellingcats-online-investigation-toolkit/): A comprehensive guide to online investigation techniques
+- [Bellingcat's Online Investigation Toolkit](https://bellingcat.gitbook.io/toolkit): A comprehensive guide to online investigation techniques
 - [The Art of OSINT](https://www.artofosint.com/): A blog dedicated to OSINT techniques and case studies
 - [OSINT Techniques](https://inteltechniques.com/): A website offering training and resources on OSINT
 
