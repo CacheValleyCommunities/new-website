@@ -1,0 +1,119 @@
+{{ define "main" }}
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <!-- Page Header -->
+        <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+                Volunteering Opportunities
+            </h1>
+            <div class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                Posts in this section are opportunities to volunteer in a community or organization. If you're
+                interested in volunteering, please contact the organization directly or follow the links provided in
+                their posting.
+            </div>
+        </div>
+
+        <!-- Posts Grid -->
+        <div class="flex flex-wrap -m-4">
+            {{ range sort .Paginator.Pages "Date" "desc" }} {{ if not .Params.private }}
+            <div class="p-4 md:w-1/3">
+                <div
+                    class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    {{ if .Params.image }}
+                    {{ $image := .Page.Resources.GetMatch .Params.image }}
+                    {{ if $image }}
+                    {{ $thumb := $image.Resize "400x" }}
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{ $thumb.RelPermalink }}"
+                        alt="{{ .Title }}">
+                    {{ else }}
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                        src="https://dummyimage.com/720x400/4f46e5/ffffff&text={{ .Title }}" alt="{{ .Title }}">
+                    {{ end }}
+                    {{ else }}
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                        src="https://dummyimage.com/720x400/4f46e5/ffffff&text={{ .Title }}" alt="{{ .Title }}">
+                    {{ end }}
+
+                    <div class="p-6">
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                            {{ if .Params.categories }}{{ index .Params.categories 0 | upper }}{{ else }}POST{{ end }}
+                        </h2>
+                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                            <a href="{{ .Permalink }}" class="hover:text-indigo-600 transition-colors duration-200">{{
+                                .Title }}</a>
+                        </h1>
+                        <p class="leading-relaxed mb-3">
+                            {{ if .Summary }}{{ .Summary | truncate 120 }}{{ else }}{{ .Content | truncate 120 |
+                            plainify }}{{ end }}
+                        </p>
+                        <div class="flex items-center flex-wrap">
+                            <a href="{{ .Permalink }}"
+                                class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0 hover:text-indigo-700 transition-colors duration-200">
+                                Read More
+                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                            <span
+                                class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                    <path
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                {{ .Date.Format "Jan 2, 2006" }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }} {{ end }}
+        </div>
+
+        <!-- Pagination -->
+        {{ if gt .Paginator.TotalPages 1 }}
+        <div class="flex justify-center mt-12">
+            <nav class="flex items-center space-x-2">
+                {{ if .Paginator.HasPrev }}
+                <a href="{{ .Paginator.Prev.URL }}"
+                    class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-l-md hover:bg-gray-50 hover:text-gray-700 transition-colors duration-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </a>
+                {{ end }}
+
+                {{ range .Paginator.Pagers }}
+                {{ if eq .PageNumber $.Paginator.PageNumber }}
+                <span
+                    class="px-3 py-2 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded-md">
+                    {{ .PageNumber }}
+                </span>
+                {{ else }}
+                <a href="{{ .URL }}"
+                    class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 hover:bg-gray-50 hover:text-gray-700 transition-colors duration-200">
+                    {{ .PageNumber }}
+                </a>
+                {{ end }}
+                {{ end }}
+
+                {{ if .Paginator.HasNext }}
+                <a href="{{ .Paginator.Next.URL }}"
+                    class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-r-md hover:bg-gray-50 hover:text-gray-700 transition-colors duration-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </a>
+                {{ end }}
+            </nav>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
