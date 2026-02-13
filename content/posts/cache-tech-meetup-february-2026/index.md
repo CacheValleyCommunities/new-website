@@ -1,7 +1,7 @@
 ---
 title: Cache Tech Community - STEAM Education Roundtable - February 2026
 description: Facilitated discussion on STEAM education, community involvement, and shared opportunities for students
-date: 2026-02-28 00:16:00+0000
+date: 2026-02-12 00:16:00+0000
 image: jj-ying-8bghKxNU1j0-unsplash.jpg
 summary: "Join us on Saturday, February 28th, 2026, from 1:30 PM to 3:30 PM at Bridgerland Technical College for a facilitated discussion on STEAM education, community involvement, and shared opportunities for students."
 
