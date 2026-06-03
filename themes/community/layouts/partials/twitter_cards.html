@@ -1,19 +1,25 @@
 {{- with .Params.image }}
 {{ $image := $.Resources.GetMatch . }}
 {{ with $image }}
-{{ $thumb := .Resize "400x" }}
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="{{ $thumb.Permalink }}">
+{{ $thumb := .Resize "1200x jpg q85" }}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="{{ $thumb.Permalink }}" />
+<meta name="twitter:image:alt" content="{{ $.Title }}" />
+{{ else }}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="{{ . | absURL }}" />
 {{ end }}
+{{ else }}
+<meta name="twitter:card" content="summary" />
 {{ end }}
 
-<meta name="twitter:title" content="{{ .Title }}"/>
-<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Params.description }}{{ . }}{{ else }}{{ if .IsPage }}{{ with .Summary }}{{ . | plainify | truncate 200 }}{{ end }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}{{ end -}}" />
 {{ with .Site.Params.Social.twitter -}}
-<meta name="twitter:site" content="@{{ . }}"/>
+<meta name="twitter:site" content="@{{ . }}" />
 {{ end -}}
 {{ range .Site.Params.Authors }}
 {{ with .twitter -}}
-<meta name="twitter:creator" content="@{{ . }}"/>
+<meta name="twitter:creator" content="@{{ . }}" />
 {{ end -}}
 {{ end -}}

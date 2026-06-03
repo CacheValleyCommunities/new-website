@@ -4,15 +4,22 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>
-            {{ .Site.Title }}{{ $url := urls.Parse .Page.Permalink }}{{
-            $url.Path }}
+            {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}
         </title>
-        {{ with .Site.Params.description }}
+        {{ $pageDescription := "" }}
+        {{ with .Description }}{{ $pageDescription = . }}
+        {{ else }}{{ with .Params.description }}{{ $pageDescription = . }}
+        {{ else }}{{ if .IsPage }}{{ with .Summary }}{{ $pageDescription = (. | plainify | truncate 200) }}{{ end }}
+        {{ end }}{{ end }}{{ end }}
+        {{ if not $pageDescription }}{{ with .Site.Params.description }}{{ $pageDescription = . }}{{ end }}{{ end }}
+        {{ with $pageDescription }}
         <meta name="description" content="{{ . }}" />
         {{ end }}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="all,follow" />
         <meta name="googlebot" content="index,follow,snippet,archive" />
+        {{ partial "opengraph.html" . }}
+        {{ partial "twitter_cards.html" . }}
         {{ $customcss := "/css/custom.css" | relURL }} {{ $vimemulated :=
         "/js/vim-emulated.js" | relURL }} {{ $commandpallete :=
         "/js/command-pallete.js" | relURL }}

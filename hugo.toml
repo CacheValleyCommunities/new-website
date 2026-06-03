@@ -1,3 +1,4 @@
+baseURL = 'https://www.cachevalley.co/'
 languageCode = 'en-us'
 title = 'Cache Valley Communities'
 theme = 'community'

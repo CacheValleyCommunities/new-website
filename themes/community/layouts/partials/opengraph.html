@@ -1,13 +1,18 @@
-<meta property="og:title" content="{{ .Title }}" />
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Params.description }}{{ . }}{{ else }}{{ if .IsPage }}{{ with .Summary }}{{ . | plainify | truncate 200 }}{{ end }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}{{ end }}" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
 {{- with .Params.image }}
 {{ $image := $.Resources.GetMatch . }}
 {{ with $image }}
-  {{ $thumb := .Resize "400x" }}
-<meta property="og:image" content="{{ $thumb.Permalink }}">
+  {{ $thumb := .Resize "1200x jpg q85" }}
+<meta property="og:image" content="{{ $thumb.Permalink }}" />
+<meta property="og:image:width" content="{{ $thumb.Width }}" />
+<meta property="og:image:height" content="{{ $thumb.Height }}" />
+<meta property="og:image:alt" content="{{ $.Title }}" />
+{{ else }}
+<meta property="og:image" content="{{ . | absURL }}" />
 {{ end }}
 {{ end }}
 
