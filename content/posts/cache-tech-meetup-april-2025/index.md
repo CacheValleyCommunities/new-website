@@ -116,7 +116,7 @@ By the end of this workshop, you'll walk away with:
 5. Resources to keep learning and building your personal tech stack
 
 ## Connect With Us
-Join our [Discord community](https://discord.gg/YNkqmVGZbS) before the event to:
+Join our [Discord community](https://discord.gg/MVwXMay8Qj) before the event to:
 - Introduce yourself to other attendees
 - Ask questions about self-hosting
 - Access preparation materials and resources

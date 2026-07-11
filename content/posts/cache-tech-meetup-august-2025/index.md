@@ -72,7 +72,7 @@ This meetup represents the continuation of something special that started with C
 The success of CodeCamp showed us just how much talent and enthusiasm exists in our area. Now let's keep that energy alive and continue building something amazing together.
 
 ## Connect With Us
-Join our [Discord community](https://discord.gg/YNkqmVGZbS) to:
+Join our [Discord community](https://discord.gg/MVwXMay8Qj) to:
 - Get the confirmed date as soon as it's finalized
 - Connect with CodeCamp winners and other attendees
 - Share your own projects and get feedback

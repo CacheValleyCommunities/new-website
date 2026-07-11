@@ -51,6 +51,6 @@ If you're looking for a space to connect, learn, and grow, our **official Discor
 
 So don’t wait—join us today and become part of a dynamic, supportive, and active community!
 
-[Join the official Discord server now!](https://discord.gg/YNkqmVGZbS)
+[Join the official Discord server now!](https://discord.gg/MVwXMay8Qj)
 
 We can't wait to see you there!

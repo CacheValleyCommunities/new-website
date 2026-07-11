@@ -118,7 +118,7 @@ By the end of this workshop, you'll walk away with:
 5. New connections with local tech professionals interested in networking and security
 
 ## Connect With Us
-Join our [Discord community](https://discord.gg/YNkqmVGZbS) before the event to:
+Join our [Discord community](https://discord.gg/MVwXMay8Qj) before the event to:
 - Introduce yourself to other attendees
 - Ask questions about DNS and networking
 - Access preparation materials and resources

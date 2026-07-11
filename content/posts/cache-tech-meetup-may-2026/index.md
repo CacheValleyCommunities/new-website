@@ -42,7 +42,7 @@ You should bring a laptop or tablet to take notes, but mostly an inquisitive min
 
 ## Connect With Us
 
-Join our [Discord community](https://discord.gg/YNkqmVGZbS) before the event to:
+Join our [Discord community](https://discord.gg/MVwXMay8Qj) before the event to:
 - Introduce yourself to other attendees
 - Ask questions about DNS and networking
 - Access preparation materials and resources

@@ -40,7 +40,7 @@ Show up if you're:
 - **Tech enthusiasts** curious about what's happening in Cache Valley's tech scene
 - **Anyone interested in technology** who wants to strengthen their hardware fundamentals
 ## Connect With Us
-Join our [Discord community](https://discord.gg/YNkqmVGZbS) to:
+Join our [Discord community](https://discord.gg/MVwXMay8Qj) to:
 - Get presentation updates and materials
 - Connect with other meetup attendees
 - Share tips and techniques

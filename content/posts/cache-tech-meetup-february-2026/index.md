@@ -50,7 +50,7 @@ Show up if you're:
 - **Anyone passionate about STEAM education** and its impact on the community
 
 ## Connect With Us
-Join our [Discord community](https://discord.gg/YNkqmVGZbS) to:
+Join our [Discord community](https://discord.gg/MVwXMay8Qj) to:
 - Get presentation updates and materials
 - Connect with other meetup attendees
 - Share tips and techniques

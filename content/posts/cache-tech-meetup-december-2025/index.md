@@ -32,7 +32,7 @@ If possible, please pre-install any games before arriving. This will maximize yo
 ## Connect With Us
 The Cache Valley Tech Community is dedicated to fostering a supportive environment for technology enthusiasts of all levels.
 
-Join our [Discord community](https://discord.gg/YNkqmVGZbS) before the event to:
+Join our [Discord community](https://discord.gg/MVwXMay8Qj) before the event to:
 - Introduce yourself to other attendees
 - Ask questions about setting up your environment
 - Access preparation materials and resources

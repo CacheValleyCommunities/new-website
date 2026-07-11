@@ -74,7 +74,7 @@ Show up if you're:
 - **Anyone interested in STEM** who wants to learn new technical skills
 
 ## Connect With Us
-Join our [Discord community](https://discord.gg/YNkqmVGZbS) to:
+Join our [Discord community](https://discord.gg/MVwXMay8Qj) to:
 - Get presentation updates and materials
 - Connect with other meetup attendees
 - Share tips and techniques

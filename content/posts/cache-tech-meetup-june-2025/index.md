@@ -75,7 +75,7 @@ By the end of this workshop, you'll walk away with:
 3. New connections with local tech professionals interested in Raspberry Pi
 
 ## Connect With Us
-Join our [Discord community](https://discord.gg/YNkqmVGZbS) before the event to:
+Join our [Discord community](https://discord.gg/MVwXMay8Qj) before the event to:
 - Introduce yourself to other attendees
 - Ask questions about Raspberry Pi or the event
 - Share your own Raspberry Pi projects or ideas

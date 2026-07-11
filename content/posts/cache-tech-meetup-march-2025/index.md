@@ -112,7 +112,7 @@ By the end of this workshop, you'll have:
 5. Resources for continued learning in application security
 
 ## Connect With Us
-Join our [Discord community](https://discord.gg/YNkqmVGZbS) before the event to:
+Join our [Discord community](https://discord.gg/MVwXMay8Qj) before the event to:
 - Introduce yourself to other attendees
 - Ask questions about setting up your environment
 - Access preparation materials and resources
