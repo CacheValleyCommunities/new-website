@@ -1,9 +1,9 @@
 ---
-title: Cache Tech Community Meetup - August 2026
+title: Cache Tech Community Meetup - July 2026
 description: CodeCamp participants showcase their amazing projects!
 date: 2026-07-20 00:16:00+0000
 image: image_870x_67799e80a280c.jpg
-summary: "Join us on **August 25th, 2026** for a special Cache Tech Community meetup featuring **CodeCamp: Bridgerland participants presenting their incredible projects**! Everyone who participated has the chance to share what they built. Come celebrate their achievements and connect with Cache Valley's amazing tech community. Open to everyone—whether you participated in CodeCamp or just want to see some awesome projects!"
+summary: "Join us on **Saturday, July 25th, 2026** for a special Cache Tech Community meetup featuring **CodeCamp: Bridgerland participants presenting their incredible projects**! Everyone who participated has the chance to share what they built. Come celebrate their achievements and connect with Cache Valley's amazing tech community. Open to everyone—whether you participated in CodeCamp or just want to see some awesome projects!"
 
 categories:
     - Communities
@@ -20,7 +20,7 @@ weight: 10
 ---
 
 ### Event Details:
-- **Date**: Saturday, August 25th, 2026
+- **Date**: Saturday, July 25th, 2026
 - **Time**: 1:30 PM – 3:30 PM (MST)
 - **Location**: Bridgerland Technical College, West Building, Room 1860, 1410 N 1000 W, Logan, UT 84321
 
@@ -80,7 +80,7 @@ Join our [Discord community](https://discord.gg/MVwXMay8Qj) to:
 - Continue conversations started at the meetup
 
 ## A Message of Gratitude
-CodeCamp: Bridgerland exceeded all our expectations, and that was entirely because of the incredible people who participated. We saw collaboration, creativity, problem-solving, and genuine enthusiasm for learning and building together. This August meetup is our way of continuing to celebrate and nurture the amazing tech community we have here in Cache Valley.
+CodeCamp: Bridgerland exceeded all our expectations, and that was entirely because of the incredible people who participated. We saw collaboration, creativity, problem-solving, and genuine enthusiasm for learning and building together. This July meetup is our way of continuing to celebrate and nurture the amazing tech community we have here in Cache Valley.
 
 Whether you're a seasoned developer or just starting your tech journey, you belong in this community. Come join us for what promises to be an inspiring and energizing afternoon!
 
