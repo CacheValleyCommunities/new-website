@@ -2,7 +2,7 @@
 title: Hardening Docker Containers Workshop
 description: Learn what a container actually is, then harden one end to end—safe base images, clean builds, least-privilege runtime flags, and image slimming.
 date: 2026-09-18 00:00:00+0000
-image: https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=2071&auto=format&fit=crop
+image: container-ship-unsplash.jpg
 summary: "A self-paced, hands-on workshop on container security. Learn why a container is not a virtual machine, then work through pinning and scanning base images, building without leaking secrets, running with least privilege, and slimming images down to what they actually use."
 categories:
   - Communities
